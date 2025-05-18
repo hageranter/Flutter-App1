@@ -1,0 +1,42 @@
+name: myapp
+description: A new Flutter project.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  image_picker: ^1.1.2
+  file_picker: ^6.1.1
+  http: ^1.4.0
+  shared_preferences: ^2.0.15
+  provider: ^6.1.5
+  badges: ^3.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_native_splash: ^2.3.5   # <-- version must be here
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/download.jpeg
+    - assets/OIP.jpeg
+    - assets/bink.jpeg
+    - assets/tir.jpg
+
+# ✅ Splash config goes at root (not inside dependencies!)
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/tir.jpg
+  android: true
+  ios: true
+  web: true
